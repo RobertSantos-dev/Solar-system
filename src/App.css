@@ -1,3 +1,44 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
+}
+
+header {
+  background-color: black;
+  color: white;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.App, .planet-list li, h2, h1{
   text-align: center;
+  color: white;
+}
+
+.planet-list, .mission-list, .planet-list li, .mission-list li{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.planet-list, .mission-list {
+  justify-content: center;
+  gap: 10px;
+}
+
+.planet-list li img, .mission-list li {
+  width: 200px;
+}
+
+.mission-list li {
+  border-radius: 10px;
+  filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+  height: 150px;
+  padding: 5px;
+  background-color: rgb(110, 110, 110);
 }
